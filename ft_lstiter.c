@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 20:30:51 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 20:38:01 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/28 14:07:24 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;
-	while(lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
