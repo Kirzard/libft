@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 19:04:06 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 20:36:41 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/28 15:08:44 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new || !lst)
 		return ;
-	new->next = *lst; 
+	new->next = *lst;
 	*lst = new;
 }

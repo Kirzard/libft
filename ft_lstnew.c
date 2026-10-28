@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 18:41:50 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 20:36:31 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/28 15:09:11 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	t_list *newelem;
+	t_list	*newelem;
 
 	newelem = malloc(sizeof(t_list));
 	if (!newelem)

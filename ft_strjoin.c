@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/22 18:52:13 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 13:59:05 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/28 14:22:16 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	ft_strlcat(res, s2, lens1 + lens2 + 1);
 	return (res);
 }
-/*int	main(void)
-{
-	char s1[] = "1111   ";
-	char s2[] = "   2222";
-	char *s3;
-
-	s3 = ft_strjoin(s1, s2);
-	printf("%s\n", s3);
-	free(s3);
-}*/
