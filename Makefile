@@ -13,7 +13,7 @@ CC = gcc
 
 CFLAGS = -Wall -Wextra -Werror
 
-all: $(NAME) clean
+all: $(NAME)
 
 $(NAME): $(OFILES)
 	ar rcs $(NAME) $(OFILES) 
@@ -21,7 +21,7 @@ $(NAME): $(OFILES)
 clean:
 	rm -f $(OFILES)
 
-fclean:
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean $(NAME)
