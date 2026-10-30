@@ -6,16 +6,18 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/21 18:52:01 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/23 16:32:00 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/30 15:18:54 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bzero(char *s, unsigned int n)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
-	while (i < n && ((unsigned char *)s)[i])
+	while (i < n)
 	{
 		((unsigned char *)s)[i] = '\0';
 		i++;

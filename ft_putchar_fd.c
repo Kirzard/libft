@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 14:48:24 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 15:01:28 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/30 17:00:24 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
+	if (fd == -1)
+		return ;
 	write(fd, &c, 1);
 }

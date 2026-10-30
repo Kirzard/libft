@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 15:17:30 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 15:44:23 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/30 17:01:04 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	char	p;
 
+	if (fd == -1)
+		return ;
 	if (n == -2147483648)
 	{
 		write(fd, &"-2147483648", 11);
@@ -23,7 +25,7 @@ void	ft_putnbr_fd(int n, int fd)
 	}
 	if (n < 0)
 	{
-		write(fd, &"-", 1);
+		write(fd, "-", 1);
 		n *= -1;
 	}
 	if (n > 9)

@@ -6,7 +6,7 @@
 /*   By: tadupin <tadupin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 15:07:27 by tadupin           #+#    #+#             */
-/*   Updated: 2026/10/27 16:34:55 by tadupin          ###   ########.fr       */
+/*   Updated: 2026/10/30 17:00:44 by tadupin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	if (!s || !fd)
+	if (!s || fd == -1)
 		return ;
 	write(fd, s, ft_strlen(s));
 	write(fd, "\n", 1);
